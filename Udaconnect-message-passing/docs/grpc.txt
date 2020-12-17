@@ -1,0 +1,5 @@
+** you need to use postman to make kafka request (for location service) so that you can save the response as json message. you can make the request through https://localhost:30000/
+
+** you can also make request to grpc (for person service). you need to use the port: https://localhost:5005/ .
+
+** the remaining API endpoints can be requested via (https://localhost:30001/) this port.

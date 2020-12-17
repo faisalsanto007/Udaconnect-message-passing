@@ -1,0 +1,30 @@
+**Justification:
+
+In my architectural design, main components are Frontend, API, Database, Kafka, and gRPC. The Frontend will communicate with the api by sending requests. Based on that request, API will send queries to the database and will receive information in return. Finally Api will send appropriate response to the frontend. We are using Kafka and gRPC message passing techniques. In addition, API is consist of 2 services. "Person Service" and "Location Service".
+
+
+**Kafka- Kafka is often used to handle large volumes of data generated continuously as events i.e, "application logs" or "user activity". 
+       - In our case, "location service" might generate lot of such as events. Therefore, Kafka would be an ideal choice for handling such amount of data.
+
+
+**gRPC- gRPC provides better performance at the expense of less flexibility. Since our project is an MVP (Minimum Viable Product) we don't need to worry about flexibility.
+      - gRPC messages are transmitted as binary data which improves the speed. It also improves the overall payload and therefore will improve the request and response times in our project.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
